@@ -1,0 +1,173 @@
+/*html {*/
+/*    box-sizing: border-box;*/
+/*    height: 100%;*/
+/*}*/
+
+/**,*/
+/**::before,*/
+/**::after {*/
+/*    box-sizing: inherit;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*body {*/
+/*    align-items: center;*/
+/*    background: linear-gradient(320deg, #ed92be, #ffef78, #63c9b4);*/
+/*    display: flex;*/
+/*    font-family: 'Dosis', sans-serif;*/
+/*    font-display: swap;*/
+/*    height: inherit;*/
+/*    justify-content: center;*/
+/*}*/
+
+/*.wrapper {*/
+/*    backdrop-filter: blur(5, 5px);*/
+/*    -webkit-backdrop-filter: blur(5, 5px);*/
+/*    background: rgba(255, 255, 255, 0.75);*/
+/*    border: 1px solid rgba(255, 255, 255, 0.01);*/
+/*    border-radius: 16px;*/
+/*    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);*/
+/*    color: #232323;*/
+/*}*/
+
+
+/*.wrapper {*/
+/*    backdrop-filter: blur(4px);*/
+/*    -webkit-backdrop-filter: blur(4px);*/
+/*    background: rgba(255, 255, 255, 0.30);*/
+/*    border: 1px solid rgba(255, 255, 255, 0.34);*/
+/*    flex-basis: 400px;*/
+/*    height: 540px;*/
+/*    padding: 20px 35px;*/
+/*}*/
+
+/*.screen {*/
+/*    backdrop-filter: blur(5, 5px);*/
+/*    -webkit-backdrop-filter: blur(5, 5px);*/
+/*    background: rgba(255, 255, 255, 0.75);*/
+/*    border: 1px solid rgba(255, 255, 255, 0.01);*/
+/*    border-radius: 16px;*/
+/*    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);*/
+/*    color: #232323;*/
+/*    font-size: 35px;*/
+/*    overflow: auto;*/
+/*    padding: 20px;*/
+/*    text-align: right;*/
+/*    width: 326px;*/
+/*}*/
+
+/*.calc-button-row {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    margin: 5% 0;*/
+/*}*/
+
+/*.calc-button {*/
+/*    backdrop-filter: blur(5, 5px);*/
+/*    -webkit-backdrop-filter: blur(5, 5px);*/
+/*    background: rgba(255, 255, 255, 0.75);*/
+/*    border: 1px solid rgba(255, 255, 255, 0.1);*/
+/*    border-radius: 16px;*/
+/*    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);*/
+/*    color: #232323;*/
+/*    flex-basis: 60px;*/
+/*    font-family: inherit;*/
+/*    font-size: 24px;*/
+/*    height: 65px;*/
+/*}*/
+
+/*.calc-button:last-child {*/
+/*    backdrop-filter: blur(5, 5px);*/
+/*    -webkit-backdrop-filter: blur(5, 5px);*/
+/*    background: rgba(255, 255, 255, 0.75);*/
+/*    border: 1px solid rgba(255, 255, 255, 0.1);*/
+/*    border-radius: 16px;*/
+/*    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);*/
+/*    color: #ffff;*/
+/*    background: #ef6f08;*/
+/*}*/
+
+/*.calc-button:last-child:hover {*/
+/*    background-color: inherit;*/
+/*    color: inherit;*/
+/*}*/
+
+/*.calc-button:hover {*/
+/*    background-color: inherit;*/
+/*}*/
+
+/*.calc-button:active {*/
+/*    background-color: #ffef78;*/
+/*}*/
+
+/*.double {*/
+/*    flex-basis: 140px;*/
+/*}*/
+/*.triple{*/
+/*    flex-basis: 73%;*/
+/*}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Inter:wght@400;700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    min-width: 400px;
+    min-height: 600px;
+    border-radius: 15px 15px 0 0;
+    border: 5px solid black;
+}
+
+#display {
+    font-size: 35px;
+    color: white;
+    text-align: right;
+    background-color: #090d67;
+    padding: 35px 15px;
+    border-radius: 10px 10px 0 0;
+
+}
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 100px;
+    background-color: #9bb8f8;
+    border:  1px solid white;
+    cursor: pointer;
+    font-size: 27px;
+    font-weight: 600;
+    color: #444;
+}
+.button:hover {
+    color: white;
+    background-color: #6450b1;
+}
+
+.span {
+    grid-column: 2 span;
+}
